@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Credit Score Check</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .header {
+      text-align: center;
+    }
+    .header h1 {
+      color: #2c3e50;
+    }
+    .cta-btn {
+      background-color: #27ae60;
+      color: white;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin: 20px 0;
+    }
+    .features, .steps {
+      margin-top: 30px;
+    }
+    .features li, .steps li {
+      margin: 10px 0;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
+    }
+    .trust-logos {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .trust-logos img {
+      height: 40px;
+      margin: 0 10px;
+    }
+    .secure-badge {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 13px;
+      color: #444;
+    }
+    .secure-badge span {
+      background-color: #e0f7e9;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: 1px solid #b2dfdb;
+      display: inline-block;
+      margin-top: 5px;
+    }
+    .privacy-link {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 12px;
+    }
+    .privacy-link a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    .countdown {
+      font-size: 18px;
+      font-weight: bold;
+      color: #e74c3c;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .trustpilot {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>Check Your Credit Score Instantly – 100% Free</h1>
+    <p>Secure. Fast. No credit card required.</p>
+    <a href="https://nx2bs.com/c?o=46&a=11788&s1=sidratul" class="cta-btn">🔍 Get My Free Credit Score</a>
+
+    <div class="trust-logos">
+      <p style="font-size: 13px; color: #666;">We use trusted partners:</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/TransUnion_logo.svg" alt="TransUnion Logo">
+      <img src="https://upload.wikimedia.org/wikipedia/en/4/45/Equifax_logo.svg" alt="Equifax Logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Norton_Security.svg" alt="Norton Secure Logo">
+    </div>
+
+    <div class="secure-badge">
+      <span>🔒 This is a secure site — your information is protected.</span>
+    </div>
+
+    <div class="privacy-link">
+      <a href="#">View our Privacy Policy</a>
+    </div>
+
+    <div class="countdown" id="countdown">
+      <p>Hurry! Offer expires in: <span id="timer"></span></p>
+    </div>
+
+    <div class="trustpilot">
+      <script type="text/javascript" src="https://widget.trustpilot.com/bootstrap/v5/tp.widget.min.js"></script>
+      <div class="trustpilot-widget" data-businessunit-id="your_business_unit_id" data-template-id="539e2374d7c38d9b6501f778" data-style-height="50px" data-style-width="100%" data-theme="light"></div>
+    </div>
+  </div>
+
+  <div class="features">
+    <h2>Why Check Your Score?</h2>
+    <ul>
+      <li>✔️ Lower your loan interest rate</li>
+      <li>✔️ Improve your chances of approval</li>
+      <li>✔️ Know where you stand financially</li>
+    </ul>
+  </div>
+
+  <div class="steps">
+    <h2>How It Works</h2>
+    <ol>
+      <li>Enter your basic information</li>
+      <li>Answer quick identity questions</li>
+      <li>View your score instantly</li>
+    </ol>
+  </div>
+
+  <div class="footer">
+    <p>We partner with trusted credit bureaus like TransUnion</p>
+    <p>© 2025 YourSiteName</p>
+  </div>
+</div>
+
+<script>
+  // Countdown Timer Script
+  var countdownDate = new Date().getTime() + 60 * 60 * 1000; // Set timer for 1 hour
+  var timer = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countdownDate - now;
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    document.getElementById("timer").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+    if (distance < 0) {
+      clearInterval(timer);
+      document.getElementById("timer").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+</script>
+
+</body>
+</html>
